@@ -36,7 +36,7 @@ public class Main
 		
 			//Prompt for input name
 			System.out.print("Please enter the name of the show: ");
-			name = keyboard.nextLine();
+			name = keyboard.nextLine().trim();
 			
 			//Prompt for input starRating with numeric and range validation (do while loop)
 			while (true) {
