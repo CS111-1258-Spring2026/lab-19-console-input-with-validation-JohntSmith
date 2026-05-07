@@ -16,9 +16,10 @@ public class Main
 		NetflixOriginal [] shows = new NetflixOriginal[2];
 		for (int i = 0; i < shows.length; i++) {
 			shows[i] = instantiateFromInput(keyboard);
+			System.out.println(shows[i]);
 		}
-		System.out.println(shows[0]);
-		System.out.println(shows[1]);
+		//System.out.println(shows[0]);
+		//System.out.println(shows[1]);
 	}
 		/**
      	 * Prompts the user for name, star rating, and genre.
@@ -33,11 +34,11 @@ public class Main
 			double starRating = -1.0;
 			NetflixOriginal temp = new NetflixOriginal();
 		
-			//Pompt for input name
+			//Prompt for input name
 			System.out.print("Please enter the name of the show: ");
 			name = keyboard.nextLine();
 			
-			//Pompt for input starRating with numeric and range validation (do while loop)
+			//Prompt for input starRating with numeric and range validation (do while loop)
 			while (true) {
 				System.out.print("Please enter the star rating: ");
 				if (keyboard.hasNextDouble()) {
@@ -52,7 +53,7 @@ public class Main
 					}
 			}
 						
-			//Pompt for input genre with validation against VALID_GENRES array (do while loop)
+			//Prompt for input genre with validation against VALID_GENRES array (do while loop)
 			boolean validGenre = false;
 			while (!validGenre) {
 				System.out.print("Please enter the genre: ");
@@ -60,8 +61,7 @@ public class Main
 				validGenre = temp.setGenre(genre);
 
 				if (!validGenre) {
-					System.out.println("ERROR: That is not a valid genre. Please choose one of the following: drama," +
-					 " comedy, horror, action, science fiction, anime, reality, unknown");
+					System.out.println("ERROR: That is not a valid genre. Please choose one of the following: ");
 					for (int i = 0; i < NetflixOriginal.VALID_GENRES.length; i++) {
 						System.out.print(NetflixOriginal.VALID_GENRES[i] + (i < NetflixOriginal.VALID_GENRES.length -1 ? ", " : ""));
 					}
