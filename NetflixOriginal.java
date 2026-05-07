@@ -130,10 +130,14 @@ public class NetflixOriginal
 
   /***** OTHER REQUIRED METHODS *****/
   /** DESCRIPTION: Returns a string of all instance variables separated by commas.*/
-  public String toString()
-  {
-    return String.format("%s,%.1f,%s",name,starRating,genre);
-  }
+  //public String toString()
+  //{
+  //  return String.format("%s,%.1f,%s",name,starRating,genre);
+ // }
+      @Override
+    public String toString() {
+        return name + "," + starRating + "," + genre;
+    }
 
   /**DESCRIPTION: Determines whether all instance variables of calling object are equal to all instance variables of parameter.*/
   public boolean equals(NetflixOriginal other)
