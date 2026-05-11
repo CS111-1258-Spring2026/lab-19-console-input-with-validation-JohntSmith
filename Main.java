@@ -45,7 +45,7 @@ public class Main
 					starRating = keyboard.nextDouble();
 					keyboard.nextLine(); //Consume the buffer
 					if (starRating >= 0 && starRating <= 5) break;
-					else System.out.println("ERROR: please enter a star rating between 0.0-5.0");
+					else System.out.print("ERROR: please enter a star rating between 0.0-5.0\n");
 				} else 
 					{
 					System.out.println("ERROR: please enter a valid number for the star rating.");
@@ -61,7 +61,7 @@ public class Main
 				validGenre = temp.setGenre(genre);
 
 				if (!validGenre) {
-					System.out.println("ERROR: That is not a valid genre. Please choose one of the following: ");
+					System.out.print("ERROR: That is not a valid genre. Please choose one of the following:\n");
 					for (int i = 0; i < NetflixOriginal.VALID_GENRES.length; i++) {
 						System.out.print(NetflixOriginal.VALID_GENRES[i] + (i < NetflixOriginal.VALID_GENRES.length -1 ? ", " : ""));
 					}
