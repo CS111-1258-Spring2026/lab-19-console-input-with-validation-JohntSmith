@@ -1,6 +1,6 @@
 /**
  * Main class for Lab 19: Console input with validation.
- * This Program defines a NetflixOriginal class with attributes for name, star rating, and genre.
+ * This Program defines a NetflixOriginal class with name, star rating, and genre.
  * Validates the input, and stores the data in an array. Then prints the details of each show.
  * @JohntSmith
  * <Date> 05/06/2026
