@@ -45,7 +45,7 @@ public class Main
 					starRating = keyboard.nextDouble();
 					keyboard.nextLine(); //Consume the buffer
 					if (starRating >= 0 && starRating <= 5) break;
-					else System.out.println("ERROR: please enter a star rating between 0.0-5.0: ");
+					else System.out.println("ERROR: please enter a star rating between 0.0-5.0");
 				} else 
 					{
 					System.out.println("ERROR: please enter a valid number for the star rating.");
